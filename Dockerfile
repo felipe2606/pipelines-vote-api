@@ -1,4 +1,4 @@
-FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:latest as builder
+FROM docker.io/library/golang:1.21 AS builder
 
 WORKDIR /build
 ADD . /build/
