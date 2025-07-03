@@ -1,4 +1,4 @@
-FROM docker.io/library/golang:1.21 AS builder
+FROM registry.access.redhat.com/ubi8/go-toolset AS builder
 
 WORKDIR /build
 ADD . /build/
